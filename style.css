@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Heebo&display=swap' );
+ @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Heebo&family=Pacifico&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Heebo&family=Pacifico&family=Shadows+Into+Light&display=swap');
+/* boby */
+body{
+  background-color:black;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    border:2px solid black;
+background-color: rgb(170, 170, 17);
+color: bisque;
+font-family: 'Delicious Handrawn', cursive;
+font-size: 15px;
+}
+.navbar ul{ 
+    display: flex;
+    margin-left: 150px;
+}
+.navbar li{
+    display: flex;
+    margin: 10px 50px}
+
+
+
+/* for box */
+.gamecon{
+    display:flex;
+    justify-content: center;
+    margin-top:60px;}
+
+
+.container{display: grid;
+    grid-template-columns:repeat(3,13vw);
+    grid-template-rows:repeat(3,13vw) ;
+    gap: 0.1vw;
+    position: relative;
+}
+
+
+.item{
+    border: 5px solid red;
+    border-radius:10px;
+    cursor: pointer;
+    text-align: center;}
+
+.bb-r{
+    border-right: 0;}
+
+.bb-l{
+    border-left: 0;}
+
+.bb-t{
+    border-top: 0;}
+
+.bb-b{
+    border-bottom: 0;}
+
+
+.boxtext{ color: rebeccapurple;
+    font-size:10vw;}
+
+.line{
+    background-color: rgb(149, 198, 221);
+    height:4px;
+    width:0;
+    position: absolute;
+    color: blanchedalmond;
+    transition: width 1s ease-in-out;
+}
+
+
+
+/* for game reset and more info */
+.resset{color: aqua;
+    padding-left:130px;}
+
+#reset{
+    color: brown;
+    font-size: 40px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+
+#reset:hover{background-color: rgb(69, 177, 177);
+    border-radius: 10px;}
+
+.info{ font-family: 'Delicious Handrawn', cursive;
+    font-size:50px;}
+
+/*responsiveness  */
+@media screen and (max-width: 990px) {
+    body {
+        background-color: blue;
+        color: white;
+      }
+      .gamecon{
+          display:block;
+          margin-left:255px
+      }
+      .container{ grid-template-columns:repeat(3,13vw);
+      grid-template-rows:repeat(3,13vw);   }
+  
+    
+          #reset{
+            font-size: 40px;
+            padding: 0px 20px;
+            border-radius: 5px;}
+        
+        .info{
+            font-size:50px;}
+  }
+  
